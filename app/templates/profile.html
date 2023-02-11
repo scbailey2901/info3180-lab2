@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% block main %}
+  <div class="profiletop">
+    <img src="{{url_for('static',filename='img1.png')}}" alt="Profile Picture with a Black Girl" align="center">
+    <h1 align="center"><strong>Shaneisia Bailey</strong></h1>
+    <p align="center">@scbailey2901</p>
+    <p align="center">Kingston, Jamaica</p>
+    <p align="center">{{ date_joined }}</p>
+  </div>
+  <div class="profilebottom">
+    <br>
+      <p id="desc" align="center">Just a second year Software Engineering major that likes web design and development :)</p>
+      <br>
+      <div id="profilestats" align="center">
+        <div id="posts">
+            <p id="num" align="center"><strong>3</strong></p>
+            <p id="label" align="center">Posts</p>
+        </div>
+        <br>
+        <div id="following">
+          <p id="num" align="center"><strong>250</strong></p>
+          <p id="label" align="center">Following</p>
+        </div>
+        <br>
+        <div id="followers">
+          <p id="num" align="center"><strong>200</strong></p>
+          <p id="label" align="center">Followers</p>
+        </div>
+      </div>
+      <br>
+    <div class="button">
+      <button id="followbutton"><strong>Follow</strong></button>
+    </div>
+    
+  </div>
+
+
+{% endblock %}
